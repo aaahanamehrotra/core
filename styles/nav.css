@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: green;
+  color: aqua;
+  align-items: center;
+  list-style: none;
+  height: 80px;
+}
+
+li {
+  line-height: 100%;
+}

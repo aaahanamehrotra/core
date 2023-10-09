@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: green;
+  color: aqua;
+}
+
+li {
+  color: red;
+}
