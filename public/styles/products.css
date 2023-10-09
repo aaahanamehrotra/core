@@ -1,6 +1,6 @@
 .product {
   border: 1px solid white;
-  width: 200px;
+  width: 400px;
   margin: 40px;
 }
 .product-image {
@@ -19,4 +19,14 @@
 .product-desc {
   text-align: justify;
   margin-block: 10px;
+}
+
+.view-btn {
+  height: 40px;
+  text-align: center;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }

@@ -1,0 +1,36 @@
+<h1 class="heading">Buy Tickets</h1>
+<%- include ("./partials/errorcreate"); %>
+<form action="/ticket" method="POST">
+  <label for="username" class="ticket-field">Username</label>
+  <input
+    readonly
+    type="text"
+    id="username"
+    name="username"
+    class="create-field"
+    value="<%= typeof user != 'undefined' ? user._id : id %>"
+    readonly
+  />
+
+  <label for="tickets" class="ticket-field">Number of tickets</label>
+  <input
+    type="number"
+    id="tickets"
+    name="tickets"
+    placeholder="No. of tickets"
+    class="ticket-field"
+    value="<%= typeof ticket != 'undefined' ? ticket : '' %>"
+  />
+
+  <label for="id" hidden>Username</label>
+  <input
+    readonly
+    type="text"
+    id="id"
+    name="id"
+    value="<%= typeof user != 'undefined' ? user.id : username %>"
+    readonly
+  />
+
+  <button class="ticket-field">Buy</button>
+</form>

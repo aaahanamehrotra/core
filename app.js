@@ -41,17 +41,23 @@ app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg");
   res.locals.error_msg = req.flash("error_msg");
   res.locals.error = req.flash("error");
+  res.locals.login = req.isAuthenticated();
   next();
 });
 
 app.use("/", require("./routes/index"));
 app.use("/users", require("./routes/users"));
 app.use("/product", require("./routes/product"));
-// app.use("/products", require("./routes/product"));
+app.use("/ticket", require("./routes/ticket"));
 
 const PORT = process.env.PORT || 5000;
 
+app.listen(PORT, console.log("listening"));
+// const Ticket = require("./models/Ticket");
+// const P = new Ticket({});
+// t = P.save();
 // const Product = require("./models/Product");
+
 // const P = new Product({
 //   name: "lorem ipsum",
 //   cost: 34,
@@ -61,4 +67,3 @@ const PORT = process.env.PORT || 5000;
 //   desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nostrum corrupti quas, exercitationem fugit laudantium error iure, delectus maxime, officiis animi! Est corporis temporibus dolorem ratione tempore dignissimos at aliquid? Ullam, officia?",
 // });
 // const savedPost = P.save();
-app.listen(PORT, console.log("listening"));

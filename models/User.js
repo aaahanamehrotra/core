@@ -14,8 +14,8 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   bookedtickets: {
-    type: Array,
-    default: [],
+    type: Number,
+    default: 0,
   },
   boughtproducts: {
     type: Array,
