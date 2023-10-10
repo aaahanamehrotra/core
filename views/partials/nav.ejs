@@ -1,11 +1,13 @@
 <nav class="nav">
-  <a href="/"><li>Home</li></a>
-  <a href="/about"><li>About</li></a>
-  <a href="/product"><li>Products</li></a>
-  <h1>Logo</h1>
-  <a href="/book"><li>Book</li></a>
+  <a class="nav-link" href="/"><li>Home</li></a>
+  <a class="nav-link" href="/about"><li>About</li></a>
+  <a class="nav-link" href="/product"><li>Products</li></a>
+  <a class="nav-link" href="/"
+    ><li><h1>Logo</h1></li></a
+  >
+  <a class="nav-link" href="/book"><li>Book</li></a>
   <% if (login) { %> <a href="/profile"><li>Profile</li></a>
-  <a href="/users/logout"><li>Logout</li></a> <% }else{ %>
-  <a href="/users/register"><li>Register</li></a>
-  <a href="/users/login"><li>Login</li></a> <% } %>
+  <a class="nav-link" href="/users/logout"><li>Logout</li></a> <% }else{ %>
+  <a class="nav-link" href="/users/register"><li>Register</li></a>
+  <a class="nav-link" href="/users/login"><li>Login</li></a> <% } %>
 </nav>
