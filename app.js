@@ -54,17 +54,3 @@ app.use("/ticket", require("./routes/ticket"));
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log("listening"));
-// const Ticket = require("./models/Ticket");
-// const P = new Ticket({});
-// t = P.save();
-// const Product = require("./models/Product");
-
-// const P = new Product({
-//   name: "lorem ipsum",
-//   cost: 34,
-//   stock: 4,
-//   image:
-//     "https://media.istockphoto.com/id/163208487/photo/male-coat-isolated-on-the-white.jpg?s=612x612&w=0&k=20&c=3Sdq5xnVS2jOYPNXI6JLwAumzyelcP_VgKVW0MVUhwo=",
-//   desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nostrum corrupti quas, exercitationem fugit laudantium error iure, delectus maxime, officiis animi! Est corporis temporibus dolorem ratione tempore dignissimos at aliquid? Ullam, officia?",
-// });
-// const savedPost = P.save();

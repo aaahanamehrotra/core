@@ -10,23 +10,45 @@ section {
   margin: auto;
 }
 
-.abt-txt {
-  text-align: justify;
-  margin-top: 40px;
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.abt {
+.abt-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.abt-img {
+  width: 35%;
+  display: block;
+  margin: 80px;
+}
+
+.abt-txt {
   padding: 80px;
   display: flex;
   justify-content: center;
   font-size: 18px;
   line-height: 32px;
   flex-direction: column;
-  max-width: 400px;
+  width: 30%;
+  text-align: justify;
+  margin-top: 40px;
 }
 
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media only screen and (max-width: 900px) {
+  .abt-container {
+    flex-direction: column;
+  }
+  .abt-txt {
+    width: 80%;
+  }
+  .abt-img {
+    margin: auto;
+  }
 }
