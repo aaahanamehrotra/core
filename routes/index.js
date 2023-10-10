@@ -15,7 +15,6 @@ router.get("/book", ensureAuthenticated, async (req, res) => {
   const tickets = stock.Tickets;
 
   const data = req.user;
-  console.log(data);
   res.render("book", { user: req.user, tickets: tickets });
 });
 

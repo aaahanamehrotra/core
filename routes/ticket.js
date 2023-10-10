@@ -30,11 +30,8 @@ router.post("/", async (req, res) => {
     );
 
     const id = req.body.username;
-    console.log(id);
-    console.log(id);
     const buyer = await User.findById(id);
     const inaccount = buyer.bookedtickets;
-    console.log(inaccount);
     const added = await User.updateOne(
       { _id: id },
       { $set: { bookedtickets: Number(inaccount) + Number(bought) } }

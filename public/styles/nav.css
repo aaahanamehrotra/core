@@ -20,3 +20,18 @@ nav > * {
   color: #fff;
   height: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+  .nav-link {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    height: 20px;
+  }
+}
