@@ -29,7 +29,8 @@ router.post("/", async (req, res) => {
       { $set: { Tickets: remaining - bought } }
     );
 
-    const id = req.body.id;
+    const id = req.body.username;
+    console.log(id);
     console.log(id);
     const buyer = await User.findById(id);
     const inaccount = buyer.bookedtickets;
@@ -39,7 +40,7 @@ router.post("/", async (req, res) => {
       { $set: { bookedtickets: Number(inaccount) + Number(bought) } }
     );
 
-    res.redirect("/");
+    res.redirect("/profile");
   }
 });
 

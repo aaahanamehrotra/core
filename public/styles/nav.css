@@ -2,19 +2,18 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-}
-
-li {
-  list-style: none;
-  color: #fff;
+  padding: 30px;
+  align-items: center;
 }
 
 a.nav-link {
   text-decoration: none;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 80px;
 }
 
 nav > * {

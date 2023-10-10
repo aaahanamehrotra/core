@@ -1,13 +1,10 @@
 <nav class="nav">
-  <a class="nav-link" href="/"><li>Home</li></a>
-  <a class="nav-link" href="/about"><li>About</li></a>
-  <a class="nav-link" href="/product"><li>Products</li></a>
-  <a class="nav-link" href="/"
-    ><li><h1>Logo</h1></li></a
-  >
-  <a class="nav-link" href="/book"><li>Book</li></a>
-  <% if (login) { %> <a href="/profile"><li>Profile</li></a>
-  <a class="nav-link" href="/users/logout"><li>Logout</li></a> <% }else{ %>
-  <a class="nav-link" href="/users/register"><li>Register</li></a>
-  <a class="nav-link" href="/users/login"><li>Login</li></a> <% } %>
+  <a class="nav-link" href="/"><img src="/images/maaas.png" class="logo" /></a>
+  <a class="nav-link" href="/">Home</a>
+  <a class="nav-link" href="/product">Merch</a>
+  <a class="nav-link" href="/book">Bookings</a>
+  <% if (login) { %> <a href="/profile" class="nav-link">Profile</a>
+  <a class="nav-link" href="/users/logout">Logout</a> <% }else{ %>
+  <a class="nav-link" href="/users/register">Register</a>
+  <a class="nav-link" href="/users/login">Login</a> <% } %>
 </nav>

@@ -3,6 +3,11 @@
   margin: 40px;
   background-color: #42424f;
 }
+.product-name {
+  font-size: 24px;
+  margin-block: 10px;
+  padding: 0 !important;
+}
 .product-image {
   width: 100%;
 }
@@ -14,7 +19,7 @@
 }
 
 .text > * {
-  padding: 10px;
+  /* padding: 10px; */
   color: #fff;
 }
 
@@ -22,13 +27,14 @@
   margin: 20px;
 }
 .product-stock {
-  text-align: right;
+  text-align: left;
+  color: #cfcfcf;
   width: 100%;
 }
 .view-btn {
   height: 40px;
   text-align: center;
-  background-color: #14141c;
+  background-color: #636378;
   display: flex;
   justify-content: center;
   align-items: center;

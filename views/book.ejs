@@ -1,9 +1,10 @@
-<h1 class="heading">Buy Tickets</h1>
+<h1 class="main-h">Buy Tickets</h1>
 <%- include ("./partials/errorcreate"); %>
-<form action="/ticket" method="POST">
-  <label for="username" class="ticket-field">Username</label>
+<h1 class="out">Only <%= tickets%> left</h1>
+<form action="/ticket" method="POST" class="reg-form">
+  <label hidden for="username" class="ticket-field">Username</label>
   <input
-    readonly
+    hidden
     type="text"
     id="username"
     name="username"
@@ -20,16 +21,6 @@
     placeholder="No. of tickets"
     class="ticket-field"
     value="<%= typeof ticket != 'undefined' ? ticket : '' %>"
-  />
-
-  <label for="id" hidden>Username</label>
-  <input
-    readonly
-    type="text"
-    id="id"
-    name="id"
-    value="<%= typeof user != 'undefined' ? user.id : username %>"
-    readonly
   />
 
   <button class="ticket-field">Buy</button>

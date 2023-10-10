@@ -1,9 +1,15 @@
 section {
   /* height: 100vh; */
-  margin-block: 120px;
+  /* margin-block: 120px; */
   color: white;
 }
 
+.landing {
+  height: 100vh;
+  display: block;
+  width: auto;
+  margin: auto;
+}
 .features > .container {
   display: flex;
   background-color: green;
@@ -25,27 +31,18 @@ section {
   width: 400px;
   width: 50%;
   text-align: justify;
-
   margin-top: 40px;
 }
 
 .abt {
-  padding: 40px;
+  padding: 80px;
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 32px;
   flex-direction: column;
 }
 
-.main-h {
-  text-align: center;
-  margin-block: 40px;
-  font-size: 40px;
-}
-.side-h {
-  text-align: left;
-}
 .features {
   display: flex;
   flex-direction: column;

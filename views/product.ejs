@@ -12,18 +12,18 @@
     <div class="indi-desc"><%= data.desc %></div>
     <div class="indi-stock">In stock: <%= data.stock %></div>
     
-    <form action="/product/" method="POST">
-      <label for="id" hidden>Username</label>
-      <input
-        hidden
-        type="text"
-        id="id"
-        name="id"
-        value="<%= data._id %>"
-        readonly
-      />
-      <button class="product-buy">Buy</button>
-    </form>    
+<form action="/product/" method="POST">
+  <label for="id" hidden>Username</label>
+  <input
+    hidden
+    type="text"
+    id="id"
+    name="id"
+    value="<%= data._id %>"
+    readonly
+  />
+  <button class="product-buy">Buy</button>
+</form>    
     
   </div>
 </div>
